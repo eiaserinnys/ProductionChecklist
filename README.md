@@ -1,80 +1,137 @@
-﻿## 프리프로덕션 체크리스트
+# Prologue - Jekyll Theme
 
-영화 업계에서 사용되는 프리프로덕션 체크리스트입니다.
+[![Gem Version](https://badge.fury.io/rb/jekyll-theme-prologue.svg)](https://badge.fury.io/rb/jekyll-theme-prologue)
 
-### 스크립트
+![Prologue Theme](assets/images/screenshot.png "Prologue Theme Screenshot")
 
-스크립트는 영화 촬영에 임하는 모든 사람들이 참고하는 청사진입니다. 
-- [ ] 가능한 한 완전한 상태로 스크립트를 확정합니다. (이후 거의 수정하지 않습니다)
-씬, 장소, 실내외 여부, 시간대, 씬에 나올 배우, 배우의 행동, 프랍, 의상, 카메라, 장비 등을 포함
-- [ ] 스크립트를 프로듀서에게 승인받습니다
+This is Prologue, a simple, single page responsive site template from [HTML5 UP](https://html5up.net/prologue), now available as a blog-aware Jekyll theme from [Chris Bobbe](https://chrisbobbe.github.io). It features a clean, minimalistic design and a sticky sidebar with navigation-linked scrolling.
 
-### 예산
+**Demo**: https://chrisbobbe.github.io/jekyll-theme-prologue/
 
-- [ ] 촬영에 사용할 예산을 결정합니다
-배우, 스탭, 로케이션 확보, 장비 구입/대여, 이동, 케이터링, 경호, 포스트 프로덕션 등을 포함
-- [ ] 프로듀서에게 예산을 승인 받습니다
-- [ ] 승인 받은 예산을 프로덕션 감독에게 전달하고 문제가 없는지 검토합니다
+# Added Features
 
-### 스탭 고용 (페이즈 1)
-- [ ] 키 포지션 스탭의 고용 계획을 세웁니다
-- [ ] 키 포지션 스탭의 일정을 확인하고 사전 협의합니다
-- [ ] 프로듀서에게 키 포지션 스탭 고용 계획을 승인받습니다
+* **Blogging and multi-page features you expect from Jekyll**
+* Compatible with GitHub Pages
+* **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
+* Build your homepage with **custom scrolly sections** in the _sections folder
+ * Set a **cover photo** for any section (not just the first), with alt text for screen readers and SEO
+* Add your **social profiles** easily in `_config.yml`.
+* Automatic search engine optimization (SEO) **meta tags** based on info you provide in `_config.yml` and frontmatter
+* **Google Analytics** built-in; just put your [Tracking ID](https://support.google.com/analytics/answer/1008080?hl=en) in `_config.yml` as `google_analytics`
+* Custom **404 page** (called 404.html; to activate, move it to your project directory).
 
-### 배우 캐스팅
-- [ ] 오디션을 진행합니다
-- [ ] 캐스팅을 확정합니다
-- [ ] 리허설을 시작합니다
+# Installation
 
-### 계약과 보험
-- [ ] 모든 키 포지션 스탭의 고용 계약서를 작성합니다
-- [ ] 모든 배우의 출연 계약서를 작성합니다
-- [ ] 작가와 대본에 대한 권리 관련 계약서를 작성합니다
-- [ ] 로케이션별로 촬영 허가, 국가/지역의 허가를 받습니다
-- [ ] 보험을 준비합니다
+There are two ways to get started (choose one):
 
-### 스크립트 브레이크다운
-- [ ] 스크립트를 스토리보드로 만들고 검토합니다
-- [ ] 스크립트를 씬으로 분해하고 번호를 붙입니다 (편집이 가능하도록 가급적 액션이 겹치게 나눕니다)
-- [ ] 각 씬의 샷을 나누고 카메라를 배정합니다
-- [ ] 씬 별로 배치도(Floor Plan)를 만들고, 배우와 카메라, 조명의 위치를 결정합니다
+1. **Install the [jekyll-theme-prologue gem](https://rubygems.org/gems/jekyll-theme-prologue).** Instructions are in the [Jekyll docs](https://jekyllrb.com/docs/themes/#installing-a-theme). After running `bundle install`, you can find the theme files by running `open $(bundle show jekyll-theme-prologue)`.  A sample working `_config.yml` file ships with the gem; if you want to activate it, move it to your project's root directory. It will do nothing until you move it there, replacing the default `_config.yml` file.
+2. **Fork or clone the [GitHub repository](https://github.com/chrisbobbe/jekyll-theme-prologue).** If you want to use [GitHub Pages](https://pages.github.com/), create a branch named `gh-pages`, and replace `theme: jekyll-theme-prologue` with `remote_theme: chrisbobbe/jekyll-theme-prologue` in the provided `_config.yml` ([GitHub Pages now supports open-source themes on GitHub](https://github.com/blog/2464-use-any-theme-with-github-pages)).
 
-### 로케이션
-- [ ] 씬 별로 등장하는 장소를 리스팅하고 적절한 실제 장소를 물색합니다
-- [ ] 최소 한 달 이전에 결정된 장소에서 촬영 가능하게 조율합니다
-- [ ] 결정된 장소에서 촬영이 불가능할 경우를 대비해 후보지를 준비합니다
-- [ ] 사전에 전문 인력을 파견해 촬영에 문제가 없는지 확인합니다
-- [ ] 전력 사용이 가능합니다
-- [ ] 스테이징 공간이 충분합니다
-- [ ] 식수 공급이나 화장실 등에 문제가 없습니다
-- [ ] 각 장소로 인력과 장비를 이동할 계획을 수립합니다
-- [ ] 인력과 장비를 이동할 운송 수단을 예약합니다
-- [ ] 스테이징 공간을 마련합니다
-    - [ ] 사용 중인 장비를 설치할 공간
-    - [ ] 사용 예정인 장비를 설치할 공간
-    - [ ] 메이크업, 드레스 룸
-    - [ ] 소품을 보관할 공간
-    - [ ] 대기 중인 배우들이 휴식할 공간
-    - [ ] 케이터링 공간
-    - [ ] 화장실이 없는 경우 간이 화장실
-- [ ] 식사와 간식, 물 등의 케이터링을 준비합니다
-- [ ] 야간 촬영이 예정된 경우 경비와 경호를 준비합니다
+Next, make sure that `url` and `base_url` are set for your own website in `_config.yml`. For local testing, make them both blank. Add a photo avatar to your project, then set `avatar: path/to/your/avatar.jpg` in _config.yml; for example, `avatar: assets/images/avatar.jpg` (48x48 pixels works best). Poke around the sample `_config.yml` file to see how you can add your social profiles.
 
-### 촬영 계획
-- [ ] 전체 촬영 일정표를 만들고, 각 장소 별로 장비와 배우를 배정합니다 (The Day Out of Days)
-- [ ] 하루의 촬영 일정을 한 줄 정도로 축약해서 정리한 테이블을 만듭니다 (The One-Liner)
-- [ ] 날짜와 장소별로 해당 장소에서 찍을 씬, 스탭, 배우 목록과 소집 시간과 장소가 들어간 표를 만듭니다 (The Call Sheet)
+# Build your homepage
 
-### 장비
-- [ ] 필요한 장비 목록을 리스팅합니다
-- [ ] 카메라, 마이크, 조명, 그립 등의 장비를 구입 혹은 대여합니다
-- [ ] 장비를 테스트합니다
-- [ ] 어떤 장비를 언제 어느 장소로 운송해야 하는지 계획을 세웁니다
+1. **Your `_config.yml` file must include the following line or your homepage won't work**: `collections: [sections]`. This tells Jekyll to look in the _sections folder (which you will create) for your content and render it all on one page.
 
-### 아트
+2. **Create a `_sections` folder** in your project's root directory and start adding content to your homepage. Set a cover photo in any of the sections by adding `cover-photo: path/to/photo.jpg` and `cover-photo-alt: your alt text here` to the section's frontmatter. Sample content is provided in the [GitHub repository](https://github.com/chrisbobbe/jekyll-theme-prologue/tree/master/_sections).
 
-- [ ] 미술 부서를 구성합니다
-- [ ] 씬 별로 색감, 분위기, 톤을 어떻게 할 것인가 결정합니다
-- [ ] 프로덕션 디자인을 진행합니다
-- [ ] 소품 목록을 작성하고, 구입, 제작, 대여합니다
-- [ ] 의상 목록을 작성하고 제작, 구입, 대여합니다
+All new sections should be added as html or Markdown documents in the `_sections` folder. The following section variables can be set with [frontmatter](https://jekyllrb.com/docs/frontmatter/):
+- `title` (required)
+- `order` (required; orders the sequence of sections on the page. Example: `1`)
+- `cover-photo` (optional; sets a background image for the section. Example: `assets/images/banner.jpg`)
+- `cover-photo-alt` (required if using a cover photo. Describes the photo for screen readers and SEO; e.g. "Dome of Light art installation, Kaohsiung, Taiwan")
+- `icon` (optional; see [Font Awesome](http://fontawesome.io/icons/) for icon codes. Example: `fa-github`)
+- `auto-header` (optional; "use-title" is default, "none" for no header, or custom header text)
+- `hide` (optional; if `true`, the section won't appear)
+
+# Start blogging!
+
+Jekyll has great resources to get you started writing blog posts. Check out [this Jekyll Docs page](https://jekyllrb.com/docs/posts/) first. When you've written a post or two, copy the following into a new file in your project directory called `blog.html`, and you'll see a link to your blog from the homepage:
+
+```
+---
+layout: blog
+title: My Blog
+---
+```
+
+-- and that's it!
+
+# Add a page
+
+To add a page, just make a new .html or .md file in your project directory. There's an example called `reading-list` [provided](https://github.com/chrisbobbe/jekyll-theme-prologue/blob/master/reading-list.md) with the GitHub repository. Add this frontmatter:
+
+```
+---
+title: My New Page
+layout: page
+---
+```
+
+You can also set these page variables in the frontmatter, if you want:
+- `subtitle`
+- `order` (orders links in the nav menu, e.g. `1`)
+- `icon` (optional; see [Font Awesome](http://fontawesome.io/icons/) for icon codes. Example: `fa-github`)
+- `hide` (optional; if `true`, a link won't appear in the nav menu. All this does is remove the nav link; your page will still be served to anyone who has the URL.)
+
+**This same set of frontmatter variables (including `title`) can also be set in `index.md` and `blog.html`.** You may want to give them titles, or hide the homepage link with `hide: true` if the homepage is the only page.
+
+For advanced SEO, this theme also lets you add `permalink` (see [Jekyll Docs](https://jekyllrb.com/docs/permalinks/#where-to-configure-permalinks)), `robots` (string, e.g. "noindex, nofollow"), and `canonical` (boolean; true is default) to any page or post.
+
+# Contributing
+
+Please feel free to submit issues and feature requests!
+
+# Credits
+
+Thanks to @andrewbanchich for his many Jekyll adaptations of HTML5 UP's elegant themes, which helped and inspired me, and of course many thanks to HTML5 UP.
+
+Original README from HTML5 UP:
+
+```
+Prologue by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+
+This is Prologue, a simple, single page responsive site template. It features a
+clean, minimalistic design and a sticky sidebar with navigation-linked scrolling.
+
+Demo content images* are courtesy of the ridiculously talented Felicia Simion. Check out
+more of her amazing work over at deviantART:
+
+http://ineedchemicalx.deviantart.com/
+
+(* = Not included! Only meant for use with my own on-site demo, so please do NOT download
+and/or use any of Felicia's work without her explicit permission!)
+
+Demo banner images* courtesy of Unsplash, a radtastic collection of CC0 (public domain)
+images you can use for pretty much whatever.
+
+(* = Not included)
+
+AJ
+aj@lkn.io | @ajlkn
+
+PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
+
+
+Credits:
+
+	Demo Images:
+		Felicia Simion (ineedchemicalx.deviantart.com)
+		Unsplash (unsplash.com)
+
+	Icons:
+		Font Awesome (fortawesome.github.com/Font-Awesome)
+
+	Other
+		jQuery (jquery.com)
+		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
+		CSS3 Pie (css3pie.com)
+		background-size polyfill (github.com/louisremi)
+		Respond.js (j.mp/respondjs)
+		jquery.scrolly (@ajlkn)
+		jquery.scrollzer (@ajlkn)
+		Skel (skel.io)
+```
